@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and responsive layout -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Watchlist App</title>
+
+    <style>
+        /* General styles for body, including background, font, and layout */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom right, #2c3e50, #bdc3c7);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden; /* Prevents horizontal overflow */
+        }
+
+        /* Container for centralizing content */
+        .container {
+            flex: 1; /* Ensures footer stays at the bottom */
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background: rgba(44, 62, 80, 0.9);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Navbar brand styling */
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ecf0f1;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Styling for navigation links */
+        .nav-link {
+            margin: 0 10px;
+            color: #ecf0f1;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        /* Hover effect for navigation links */
+        .nav-link:hover {
+            color: #f39c12;
+            transform: scale(1.1);
+        }
+
+        /* Animation for header */
+        h2 {
+            font-size: 2.5rem;
+            margin-top: 20px;
+            color: #e74c3c;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h5 {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #ecf0f1;
+        }
+
+        /* Fade-in animation keyframes */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background: rgba(44, 62, 80, 0.8);
+            color: #bdc3c7;
+            margin-top: auto; /* Keeps footer at the bottom */
+        }
+
+        footer a {
+            color: #f1c40f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: #e67e22;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar with links to different sections of the app -->
+    <div class="container">
+        <nav class="navbar">
+            <a class="navbar-brand" href="">Watchlist App</a>
+            <div>
+                <a class="nav-link" href="index">Home</a>
+                <a class="nav-link" href="watchlist">Watchlist</a>
+                <a class="nav-link" href="watchlistItemForm">Submit Item</a>
+            </div>
+        </nav>
+
+        <!-- Main content with welcome message and description -->
+        <h2>Welcome to the Watchlist Application!</h2>
+        <h5>Made for movie lovers who have a hard time choosing their next movie to watch.</h5>
+    </div>
+
+    <!-- Footer with copyright and external link -->
+    <footer>
+        <p>&copy; 2024 Watchlist App | Designed with ❤️ for movie lovers. 
+        <a href="#">Learn More</a></p>
+    </footer>
+</body>
+</html>
